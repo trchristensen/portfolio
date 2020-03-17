@@ -13,10 +13,11 @@
 
 main {
   margin-left: 70px;
+  color: #cbd5e0;
 }
 
 .avatar {
-  width: 300px;
+  width: 350px;
   max-width:100%;
 }
 
@@ -44,9 +45,32 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
+
+.sidenav .links a:hover,
+.sidenav .links a:active,
+.sidenav .links a:focus {
+  box-shadow: inset 0 0 10px #12181b;
+}
+
+.sidenav .links a:hover .sidebar-icon-fill,
+.sidenav .links a:active.sidebar-icon-fill,
+.sidenav .links a:focus .sidebar-icon-fill {
+  fill: #ed8936;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+} 
 
 .sidenav svg {
   max-width: 100%;
+}
+
+.card {
+  background-color: #2a2e35;
 }
