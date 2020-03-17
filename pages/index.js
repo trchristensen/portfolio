@@ -13,6 +13,7 @@ function getAge(dateString) {
 
 export default () => (
   <Layout>
+<div id="app">
 <nav class="sidenav fixed left-0 top-0 bottom-0 bg-gray-200">
 <div class="container">
   <div class="links flex flex-wrap">
@@ -55,6 +56,7 @@ viewBox="0 0 172 172"><g fill="none" fill-rule="nonzero" stroke="none" stroke-wi
     
   </div>
   </main>
-  </Layout>
+</div>
+</Layout>
 
 )
