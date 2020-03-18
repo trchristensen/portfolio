@@ -15,7 +15,7 @@ function getAge(dateString) {
 export default () => (
   <Layout>
     <div id="app" class="min-h-screen">
-      <nav class="sidenav fixed left-0 top-0 bottom-0 bg-gray-200">
+      <nav class="sidenav hidden lg:inline-flex xl:inline-flex fixed left-0 top-0 bottom-0 overflow-x-visible bg-gray-200 h-screen flex-col items-center z-50">
         <div class="container">
           <div class="links flex flex-wrap">
             <a href="#" class="no-underline text-gray-700 px-2 py-4">
@@ -145,17 +145,18 @@ export default () => (
           </div>
         </div>
       </nav>
-      <main>
-        <header class="pt-32 sm:pt-12 pb-12 w-full">
+      <main class="">
+        <header class="pt-12 lg:pt-32 pb-12 w-full flex">
           <div class="container px-4 m-auto">
             <div class="row flex flex-wrap align-center justify-center mx-auto">
-              <div class="w-1/3">
+              {/* w-1/2 sm:w-auto md:w-full lg:w-32 xl:w-3/4 */}
+              <div class="w-full lg:w-1/3">
                 <img
-                  class="avatar p-6 max-w-sm rounded-full float-right"
+                  class="avatar p-6 w-auto h-auto max-w-full rounded-full m-auto lg:float-right"
                   src="https://avatars0.githubusercontent.com/u/6512813?s=460&u=95c2a1f2bb132eeab6d7e4bb01871b61e4287ab6&v=4"
                 />
               </div>
-              <div class="w-2/3 text-left">
+              <div class="w-full lg:w-2/3 text-left">
                 <h4 class="font-black text-5xl mb-2">
                   <span class=" text-4xl text-red-500 italic">const</span>{" "}
                   whoAmI = <span class="text-green-500">&#123;</span>
@@ -180,16 +181,20 @@ export default () => (
                   <span class="text-gray-500">// {getAge("1986/04/18")}</span>,
                 </h4> */}
                 <h2 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">profession:</span>'Javascript
-                  Developer',
+                  <span class="pr-6 font-bold">profession:</span>
+                  <span class="block sm:block">'Javascript Developer',</span>
                 </h2>
                 <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">currentLocation:</span>'Angeles
-                  City, Philippines 🇵🇭',
+                  <span class="pr-6 font-bold sm:block">currentLocation:</span>
+                  <span class="block sm:block">
+                    'Angeles City, Philippines 🇵🇭',
+                  </span>
                 </h4>
                 <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">hometown:</span>'Foster City,
-                  California, USA 🇺🇲',
+                  <span class="pr-6 font-bold">hometown:</span>
+                  <span class="block sm:block">
+                    'Foster City, California, USA 🇺🇲',
+                  </span>
                 </h4>
                 <span class=" font-black text-5xl mb-2 text-green-500">
                   &#125;
@@ -201,13 +206,13 @@ export default () => (
         <div class="container px-4 m-auto">
           <div class="row flex align-center flex-wrap">
             <h2 class="font-black text-5xl mb-2">
-              <span class=" text-4xl text-red-500 italic">const</span> projects ={" "}
-              <span class="text-green-500">&#123;</span>
+              <span class=" text-4xl text-red-500 italic">const</span> projects
+              = <span class="text-green-500">&#123;</span>
             </h2>
           </div>
-          <div class="row -mx-4 flex flex-wrap">
+          <div class="row grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* card */}
-            <div class="card max-w-sm rounded overflow-hidden shadow-lg m-4">
+            <div class="card w-full rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
                 src="https://loremflickr.com/640/360"
@@ -235,7 +240,7 @@ export default () => (
             </div>
             {/* card */}
             {/* card */}
-            <div class="card max-w-sm rounded overflow-hidden shadow-lg m-4">
+            <div class="card w-full rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
                 src="https://loremflickr.com/640/360"
@@ -263,7 +268,7 @@ export default () => (
             </div>
             {/* card */}
             {/* card */}
-            <div class="card max-w-sm rounded overflow-hidden shadow-lg m-4">
+            <div class="card w-full rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
                 src="https://loremflickr.com/640/360"
