@@ -199,9 +199,9 @@ export default () => (
                   <span class=" text-5xl text-red-500 italic">const</span>{" "}
                   whoAmI = <span class="text-green-500">&#123;</span>
                 </h4>
-                <h1 class="font-light text-2xl pl-6">
+                <h4 class="font-light text-2xl pl-6">
                   <span class="pr-6 font-bold">name:</span>[
-                </h1>
+                </h4>
                 <div class="pl-6">
                   <h4 class="font-light text-2xl pl-6">
                     <span class="pr-6 font-bold">first:</span>'Todd',
@@ -218,22 +218,33 @@ export default () => (
                   </span>{" "}
                   <span class="text-gray-500">// {getAge("1986/04/18")}</span>,
                 </h4> */}
-                <h2 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">profession:</span>
-                  <span class="block sm:block">'Javascript Developer',</span>
-                </h2>
-                <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold sm:block">currentLocation:</span>
-                  <span class="block sm:block">
-                    'Angeles City, Philippines 🇵🇭',
+                <div class="max-w-2xl block md:grid lg:grid xl:grid grid-cols-3 gap-4 text-2xl pl-6">
+                  <span class="block sm:w-full col-span-1 pr-6 font-bold font-light">
+                    profession:
                   </span>
-                </h4>
-                <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">hometown:</span>
-                  <span class="block sm:block">
+                  <span class="sm:block sm:w-full sm:clear-both md:col-span-2 lg:col-span-2 xl:col-span-2">
+                    'Javascript Developer',
+                  </span>
+                </div>
+
+                <div class="max-w-2xl block md:grid lg:grid xl:grid grid-cols-3 gap-4 text-2xl pl-6">
+                  <span class="block sm:w-full col-span-1 pr-6 font-bold font-light">
+                    currentLocation:
+                  </span>
+                  <span class="sm:block sm:w-full sm:clear-both md:col-span-2 lg:col-span-2 xl:col-span-2">
+                    'Angeles, Philippines 🇵🇭',
+                  </span>
+                </div>
+
+                <div class="max-w-2xl block md:grid lg:grid xl:grid grid-cols-3 gap-4 text-2xl pl-6">
+                  <span class="block sm:w-full col-span-1 pr-6 font-bold font-light">
+                    hometown:
+                  </span>
+                  <span class="sm:block sm:w-full sm:clear-both md:col-span-2 lg:col-span-2 xl:col-span-2">
                     'Foster City, California, USA 🇺🇲',
                   </span>
-                </h4>
+                </div>
+
                 <span class=" font-black text-5xl mb-2 text-green-500">
                   &#125;
                 </span>
@@ -244,8 +255,8 @@ export default () => (
         <div class="container px-4 m-auto">
           <div class="row flex align-center flex-wrap">
             <h2 class="font-black text-5xl mb-4">
-              <span class=" text-5xl text-purple-500 italic mr-4">return</span>{" "}
-              <span class="text-yellow-500">(</span>
+              <span class=" text-5xl text-purple-500 italic">return</span>{" "}
+              <span class="text-yellow-500">( </span>
               <span class="text-red-500">projects</span>
               <span class="text-blue-500">.map</span>
               <span class="text-yellow-500">(</span> project &rArr;{" "}
