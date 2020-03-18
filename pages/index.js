@@ -245,6 +245,7 @@ export default () => (
           <div class="row flex align-center flex-wrap">
             <h2 class="font-black text-5xl mb-4">
               <span class=" text-5xl text-purple-500 italic mr-4">return</span>{" "}
+              <span class="text-yellow-500">(</span>
               <span class="text-red-500">projects</span>
               <span class="text-blue-500">.map</span>
               <span class="text-yellow-500">(</span> project &rArr;{" "}
@@ -294,7 +295,7 @@ export default () => (
           <div class="row">
             <span class="font-black text-5xl mb-2 block">
               <span class="text-green-500">&#125;</span>
-              <span class="text-yellow-500">)</span>;
+              <span class="text-yellow-500">))</span>;
             </span>
           </div>
         </div>
