@@ -11,7 +11,6 @@ function getAge(dateString) {
       return age;
   }
 
-
 export default () => (
   <Layout>
     <div id="app" class="min-h-screen">
@@ -197,7 +196,7 @@ export default () => (
               </div>
               <div class="w-full lg:w-2/3 text-left">
                 <h4 class="font-black text-5xl mb-2">
-                  <span class=" text-4xl text-red-500 italic">const</span>{" "}
+                  <span class=" text-5xl text-red-500 italic">const</span>{" "}
                   whoAmI = <span class="text-green-500">&#123;</span>
                 </h4>
                 <h1 class="font-light text-2xl pl-6">
@@ -245,8 +244,11 @@ export default () => (
         <div class="container px-4 m-auto">
           <div class="row flex align-center flex-wrap">
             <h2 class="font-black text-5xl mb-4">
-              <span class=" text-4xl text-red-500 italic">const</span> projects
-              = <span class="text-green-500">&#123;</span>
+              <span class=" text-5xl text-purple-500 italic mr-4">return</span>{" "}
+              <span class="text-red-500">projects</span>
+              <span class="text-blue-500">.map</span>
+              <span class="text-yellow-500">(</span> project &rArr;{" "}
+              <span class="text-green-500">&#123;</span>
             </h2>
           </div>
           <div class="row">
@@ -258,7 +260,14 @@ export default () => (
                 alt="Binance Taker Trades"
               />
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2 text-gray-200"><a href="https://binance-taker-trades.herokuapp.com/" target="_blank">Binance Taker Trades</a></div>
+                <div class="font-bold text-xl mb-2 text-gray-200">
+                  <a
+                    href="https://binance-taker-trades.herokuapp.com/"
+                    target="_blank"
+                  >
+                    Binance Taker Trades
+                  </a>
+                </div>
                 <p class="text-gray-300 text-lg">
                   A cryptocurrency market order volume monitor. Using Binance
                   exchange's API, it manipulates data and displays it live on
@@ -283,8 +292,9 @@ export default () => (
             {/* card */}
           </div>
           <div class="row">
-            <span class="font-black text-5xl mb-2 block text-green-500">
-              &#125;
+            <span class="font-black text-5xl mb-2 block">
+              <span class="text-green-500">&#125;</span>
+              <span class="text-yellow-500">)</span>;
             </span>
           </div>
         </div>
