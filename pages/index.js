@@ -18,6 +18,37 @@ export default () => (
       <nav class="sidenav hidden lg:inline-flex xl:inline-flex fixed left-0 top-0 bottom-0 overflow-x-visible bg-gray-200 h-screen flex-col items-center z-50">
         <div class="container">
           <div class="links flex flex-wrap">
+            <a href="/" class="no-underline text-gray-700 px-2 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="80"
+                height="80"
+                viewBox="0 0 172 172"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#6c7983" class="sidebar-icon-fill">
+                    <path d="M86,12.51367l-70.95,44.34375v20.12266l3.29219,-2.05762l1.00781,-0.63828v78.36582h133.3v-78.35742l4.3,2.6875v-20.12266zM86,17.58633l66.65,41.65625v9.98574l-66.65,-41.66465l-66.65,41.66465v-9.98574zM86,32.63633l62.35,38.96875v61.69492c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15v10.75h-43v-10.75c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15v-38.7h-38.7v38.7c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15v10.75h-43v-10.75c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15v-61.70332zM66.65,53.75v25.8h38.7v-25.8zM70.95,58.05h12.9v17.2h-12.9zM88.15,58.05h12.9v17.2h-12.9zM70.95,98.9h30.1v49.45h-30.1zM93.525,122.55c-1.78047,0 -3.225,1.44453 -3.225,3.225c0,1.78047 1.44453,3.225 3.225,3.225c1.78047,0 3.225,-1.44453 3.225,-3.225c0,-1.78047 -1.44453,-3.225 -3.225,-3.225zM32.25,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM40.85,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM49.45,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM58.05,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM113.95,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM122.55,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM131.15,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM139.75,133.3c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15z"></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
             <a href="/projects" class="no-underline text-gray-700 px-2 py-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +111,11 @@ export default () => (
                 </g>
               </svg>
             </a>
-            <a href="https://medium.com/@christensen.tr" target="_blank" class="no-underline text-gray-700 px-2 py-4 w-full">
+            <a
+              href="https://medium.com/@christensen.tr"
+              target="_blank"
+              class="no-underline text-gray-700 px-2 py-4 w-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -111,7 +146,11 @@ export default () => (
                 </g>
               </svg>
             </a>
-            <a href="https://github.com/trchristensen" target="_blank" class="no-underline text-gray-700 px-2 py-4 w-full">
+            <a
+              href="https://github.com/trchristensen"
+              target="_blank"
+              class="no-underline text-gray-700 px-2 py-4 w-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -205,92 +244,39 @@ export default () => (
         </header>
         <div class="container px-4 m-auto">
           <div class="row flex align-center flex-wrap">
-            <h2 class="font-black text-5xl mb-2">
+            <h2 class="font-black text-5xl mb-4">
               <span class=" text-4xl text-red-500 italic">const</span> projects
               = <span class="text-green-500">&#123;</span>
             </h2>
           </div>
-          <div class="row grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="row">
             {/* card */}
             <div class="card w-full rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
+                src="https://storage.cloud.google.com/toddchristensen/portfolio/binance-taker-trades.jpg"
+                alt="Binance Taker Trades"
               />
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                <div class="font-bold text-xl mb-2 text-gray-200"><a href="https://binance-taker-trades.herokuapp.com/" target="_blank">Binance Taker Trades</a></div>
+                <p class="text-gray-300 text-lg">
+                  A cryptocurrency market order volume monitor. Using Binance
+                  exchange's API, it manipulates data and displays it live on
+                  the front-end in a sortable and easy to consume table.
                 </p>
               </div>
               <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1">
+                  nodeJs
                 </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1">
+                  express
                 </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-1">
+                  VueJs
                 </span>
-              </div>
-            </div>
-            {/* card */}
-            {/* card */}
-            <div class="card w-full rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
-                </span>
-              </div>
-            </div>
-            {/* card */}
-            {/* card */}
-            <div class="card w-full rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 my-1">
+                  redis
                 </span>
               </div>
             </div>
