@@ -1,16 +1,4 @@
-import Layout from '../components/Layout'
-
-function getAge(dateString) {
-      var today = new Date();
-      var birthDate = new Date(dateString);
-      var age = today.getFullYear() - birthDate.getFullYear();
-      var m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-          age--;
-      }
-      return age;
-  }
-
+import Layout from "../components/Layout";
 
 export default () => (
   <Layout>
@@ -80,7 +68,11 @@ export default () => (
                 </g>
               </svg>
             </a>
-            <a href="https://medium.com/@christensen.tr" target="_blank" class="no-underline text-gray-700 px-2 py-4 w-full">
+            <a
+              href="https://medium.com/@christensen.tr"
+              target="_blank"
+              class="no-underline text-gray-700 px-2 py-4 w-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -111,7 +103,11 @@ export default () => (
                 </g>
               </svg>
             </a>
-            <a href="https://github.com/trchristensen" target="_blank" class="no-underline text-gray-700 px-2 py-4 w-full">
+            <a
+              href="https://github.com/trchristensen"
+              target="_blank"
+              class="no-underline text-gray-700 px-2 py-4 w-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -146,156 +142,14 @@ export default () => (
         </div>
       </nav>
       <main class="">
-        <header class="pt-12 lg:pt-12 pb-12 w-full flex">
-          <div class="container px-4 m-auto">
-            <div class="row flex flex-wrap align-center justify-center mx-auto">
-              {/* w-1/2 sm:w-auto md:w-full lg:w-32 xl:w-3/4 */}
-              <div class="w-full lg:w-1/3">
-                <img
-                  class="avatar p-6 w-auto h-auto max-w-full rounded-full m-auto lg:float-right"
-                  src="https://avatars0.githubusercontent.com/u/6512813?s=460&u=95c2a1f2bb132eeab6d7e4bb01871b61e4287ab6&v=4"
-                />
-              </div>
-              <div class="w-full lg:w-2/3 text-left">
-                <h4 class="font-black text-5xl mb-2">
-                  <span class=" text-4xl text-red-500 italic">const</span>{" "}
-                  whoAmI = <span class="text-green-500">&#123;</span>
-                </h4>
-                <h1 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">name:</span>[
-                </h1>
-                <div class="pl-6">
-                  <h4 class="font-light text-2xl pl-6">
-                    <span class="pr-6 font-bold">first:</span>'Todd',
-                  </h4>
-                  <h4 class="font-light text-2xl pl-6">
-                    <span class="pr-6 font-bold">last:</span>'Christensen',
-                  </h4>
-                </div>
-                <h4 class="font-light text-2xl pl-6">],</h4>
-                {/* <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">age:</span>
-                  <span class="text-purple-500 font-bold mr-2">
-                    getAge('1986')
-                  </span>{" "}
-                  <span class="text-gray-500">// {getAge("1986/04/18")}</span>,
-                </h4> */}
-                <h2 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">profession:</span>
-                  <span class="block sm:block">'Javascript Developer',</span>
-                </h2>
-                <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold sm:block">currentLocation:</span>
-                  <span class="block sm:block">
-                    'Angeles City, Philippines 🇵🇭',
-                  </span>
-                </h4>
-                <h4 class="font-light text-2xl pl-6">
-                  <span class="pr-6 font-bold">hometown:</span>
-                  <span class="block sm:block">
-                    'Foster City, California, USA 🇺🇲',
-                  </span>
-                </h4>
-                <span class=" font-black text-5xl mb-2 text-green-500">
-                  &#125;
-                </span>
-              </div>
-            </div>
-          </div>
-        </header>
         <div class="container px-4 m-auto">
           <div class="row flex align-center flex-wrap">
             <h2 class="font-black text-5xl mb-2">
-              <span class=" text-4xl text-red-500 italic">const</span> projects
-              = <span class="text-green-500">&#123;</span>
+              <span class=" text-4xl text-red-500 italic">const</span> projects ={" "}
+              <span class="text-green-500">&#123;</span>
             </h2>
           </div>
-          <div class="row grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* card */}
-            <div class="card w-full rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
-                </span>
-              </div>
-            </div>
-            {/* card */}
-            {/* card */}
-            <div class="card w-full rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
-                </span>
-              </div>
-            </div>
-            {/* card */}
-            {/* card */}
-            <div class="card w-full rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://loremflickr.com/640/360"
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #photography
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                  #travel
-                </span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
-                </span>
-              </div>
-            </div>
-            {/* card */}
-          </div>
+
           <div class="row">
             <span class="font-black text-5xl mb-2 block text-green-500">
               &#125;
