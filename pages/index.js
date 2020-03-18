@@ -23,7 +23,7 @@ export default () => (
                   src="https://avatars0.githubusercontent.com/u/6512813?s=460&u=95c2a1f2bb132eeab6d7e4bb01871b61e4287ab6&v=4"
                 />
               </div>
-              <div class="w-full lg:w-2/3 text-left">
+              <div class="w-auto lg:w-2/3 text-left">
                 <h4 class="font-black text-5xl mb-2">
                   <span class=" text-5xl text-red-500 italic">const</span>{" "}
                   whoAmI = <span class="text-green-500">&#123;</span>
