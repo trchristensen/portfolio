@@ -4,9 +4,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Open+Sans&display=swap');
+
 #app {
   background-color: #12181b;
   font-size: 20px;
+  font-family: 'Fira Mono', monospace;
 } 
 
 @media (min-width: 1024px) {
